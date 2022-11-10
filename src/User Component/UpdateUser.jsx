@@ -136,7 +136,7 @@ export class UpdateUserComponent extends Component{
                                 </div>
                                 <div className="form-group">
                                   <label >Phone Number</label>
-                                  <input type="number" name="pNumber" id="" className="form-control" placeholder=" " 
+                                  <input type="text" name="pNumber" id="" className="form-control" placeholder=" " 
                                    defaultValue={this.state.pNumber} onChange={this.changeUserPnumberHandler} />
                                 </div>
                                 <div className="form-group">

@@ -54,6 +54,8 @@ export class AddUser extends Component{
     }
     cancel(){
         alert("leaving with out saving.....")
+        this.props.history.push("/loginuser")
+
     }
     changeUserPanHandler(event){
         this.setState({pan:event.target.value})
@@ -129,7 +131,7 @@ return (
                         </div>
                         <div className="form-group">
                           <label >Phone Number</label>
-                          <input type="number" name="pNumber" id="" className="form-control"  
+                          <input type="text" name="pNumber" id="" className="form-control"  
                            value={this.state.pNumber} onChange={this.changeUserPnumberHandler} />
                         </div>
                         <div className="form-group">

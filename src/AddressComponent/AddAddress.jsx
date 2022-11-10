@@ -27,10 +27,13 @@ export class AddAddress extends Component{
                 AddressService.createAddress(address).then(res => {
                     alert("Address added successfully....")
                 })
+                this.props.history.push("/home")
+
                 
     }
     cancel(){
         alert("leaving with out saving.....")
+        this.props.history.push("/adduser")
     }
   
     changeStateHandler(event){

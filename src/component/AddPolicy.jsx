@@ -47,10 +47,14 @@ import PolicyService from "../service/PolicyService";
                 PolicyService.createPolicy(policy).then(res => {
                     alert("policy added successfully....")
                 })
+                this.props.history.push("/home")
+
                 
             }
             cancel(){
                 alert("leaving with out saving.....")
+                this.props.history.push("/home")
+
             }
         
             changePolicyNameHandler(event){

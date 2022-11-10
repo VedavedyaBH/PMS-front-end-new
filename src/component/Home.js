@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 import image1 from '../assets/image1.png';
 
-import {
-  MDBNavbar,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBContainer,
-  MDBIcon,
-  MDBCollapse
-} from 'mdb-react-ui-kit';
 
 export default function App() {
   const [showBasic, setShowBasic] = useState(false);

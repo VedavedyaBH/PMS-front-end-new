@@ -41,7 +41,7 @@ buttonClickHandler = (e) => {
 
           alert(" welcome Admin") ;
           find = 1;
-          this.props.history.push("/"+this.state.adminId);
+          this.props.history.push("/addpolicy");
       }
   }
   if (find === 0) {
@@ -53,35 +53,29 @@ buttonClickHandler = (e) => {
 
     render(){
         return(
-      <div className="Member">
+      <div className="container">
 
-      <form className="Auth-form">
-        <div className="Auth-form-content">
-          <h3 className="Auth-form-title">Sign In</h3>
+      <form className="form-container">
+        <div className="form-container-content">
+          <h3 className="title">Admin Sign In</h3>
           <div className="form-group">
-            <label>Enter id</label>
-            <input type="text" name="adminId" Id="" className="form-control" placeholder="Id" 
+            <label>Enter Admin Id</label>
+            <input type="text" name="adminId" Id="" className="form-control" placeholder="AdminId" 
             value={this.state.adminId} onChange = {this.changeAdminIdHandler}/>
         </div>
         <div className="form-group">
           <label>Enter Password</label>
-            <input type="text" name="password" id="" className="form-control" placeholder="Password" 
+            <input type="password" name="password" id="" className="form-control" placeholder="Password" 
             value={this.state.password} onChange = {this.changepasswordHandler}/>
           </div>
 
           <div>                                            
               <button className="btn btn-danger" onClick={this.buttonClickHandler}>Sign in</button>
           </div>
-          <p className="forgot-password text-right mt-2">
-            Forgot <a href="#">password?</a>
-          </p>
+         
         </div>
       </form>
-      <div>
-                   <footer className="style">
-                    © 2022 Policy Management System
-                    </footer>
-                    </div>
+     
     </div>
     
   )

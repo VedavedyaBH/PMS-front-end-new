@@ -27,12 +27,14 @@ export default function App() {
         </MDBNavbarToggler>
         <MDBCollapse navbar show={showNavSecond}>
           <MDBNavbarNav>
-            <MDBNavbarLink active aria-current='page' href='/'>
+            <MDBNavbarLink active aria-current='page' href='/home'>
               Home
             </MDBNavbarLink>
-            <MDBNavbarLink href='/listuser'>Users</MDBNavbarLink>
-            <MDBNavbarLink href='/listpolicy'>Policies</MDBNavbarLink>
+            <MDBNavbarLink href='/listuser'>Users List</MDBNavbarLink>
+            <MDBNavbarLink href='/listpolicy'>Policy List</MDBNavbarLink>
             <MDBNavbarLink href='/policytypes'>Policy types</MDBNavbarLink>
+            <MDBNavbarLink href='/loginUser'>User</MDBNavbarLink>
+            <MDBNavbarLink href='/loginAdmin'>Admin</MDBNavbarLink>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>

@@ -19,19 +19,19 @@ import { AddAddress } from './AddressComponent/AddAddress';
 function App() {
   return (
     <div >
+      
     <BrowserRouter>
     
     <Header/>
     <div className='Container-fluid'>
       <Switch>
-      <Route path="/loginAdmin" component={AdminLogin}  ></Route>
-      <Route path="/loginUser" component={UserLogin}  ></Route>
+        <Route path="/loginAdmin" component={AdminLogin}  ></Route>
+        <Route path="/loginUser" component={UserLogin}  ></Route>
         <Route path="/addpolicy" component={AddPolicy}  ></Route>
         <Route path="/listpolicy" component={ListPolicy}  ></Route>
-        <Route path="/" exact component={Home}  ></Route>
+        <Route path="/home" exact component={Home}  ></Route>
         <Route path="/updatepolicy/:Id"  component={UpdatePolicy}  ></Route>
-        <Route path="/policytypes"  component={PolicyTypes}  ></Route>
-        
+        <Route path="/policytypes"  component={PolicyTypes}  ></Route>    
         <Route path="/listuser" component={ListUser}  ></Route>
         <Route path="/adduser" component={AddUser}></Route>
         <Route path="/update/:Id" component={UpdateUserComponent}></Route>

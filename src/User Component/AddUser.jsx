@@ -93,7 +93,7 @@ return (
         <div className="container">
             <div>
                 <div className="form-container">
-                    <h2 className="title">Add User</h2>
+                    <h2 className="title">User Registration</h2>
                 <div className="form-container-content">
                     <form>
                         <div className="form-group">
